@@ -1,0 +1,172 @@
+:root{
+    --primario: #0A043C ;
+    --secundario:  #BBBBBB ;
+    --terciario:#03506F  ;
+    --hover : #bbbbbb9c ;
+    --fonte_principal:"Krona One", sans-serif; 
+    --font_secundario:"Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+    /* height: 100vh; */
+    background-color: var(--primario);
+    color: var(--secundario);
+}
+
+
+.header  {
+    padding: 3% 0 0 15%;
+}
+
+.header_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header_links{
+    font-size: 1.5rem ;
+    font-family: var(--font_secundario);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--secundario);  
+}
+
+.header_links:hover{
+    color: var(--hover);    
+    border: 1px solid var(--terciario);
+    padding: 10px;
+    transition: .5s;
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;;
+}
+
+.img{
+width: 50%;
+border-radius: 30px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo_h1{
+    font-size: 2.5rem;
+    font-family: var(--fonte_principal);
+}
+
+
+.titulo-destaque {
+    color: var(--terciario);
+}
+
+.texto_1 {
+    font-size: 1.5rem;
+    font-family: var(--font_secundario);
+    font-weight: 500;
+}
+
+.texto_1 a {
+    text-decoration: none;
+    color: var(--terciario);
+}
+
+.texto_1 li{
+    padding: 0 0  30px;
+}
+
+.texto_1 strong {
+    color: #dc143c;
+}
+.botao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.botao h2 {
+    font-family: var(--fonte_principal);
+    font-weight: 400;
+    font-size: 1.5rem;    
+}
+
+.botao_link{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 1.5rem;
+    font-family: var(--font_secundario) ;
+    font-weight: 600;
+    color: var(--secundario)  ;
+    border: 2px solid var(--terciario);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 21.5px 0 ; 
+}
+
+.fa-brands{
+color: var(--terciario);
+}
+
+
+.botao_link:hover{
+    background-color: var(--hover);
+    transition: .5s;
+}
+
+
+.footer{
+    color: var(--primario);
+    background-color: var(--terciario);
+    padding: 24px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--font_secundario) ;
+}
+
+@media (max-width: 1250px) {
+    .header {
+    padding: 10%;
+    }
+
+    .header_menu{
+        justify-content: center;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+    .footer{
+        width: auto;
+    }
+}
